@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collections",
+  "info": {
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "Collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questionTitle": {
+      "type": "string"
+    },
+    "stepInfo": {
+      "type": "string"
+    },
+    "factsContent": {
+      "type": "blocks"
+    },
+    "scoringCriteria": {
+      "type": "blocks"
+    },
+    "maxScoreExample": {
+      "type": "blocks"
+    },
+    "questionOrder": {
+      "type": "integer",
+      "unique": true
+    },
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}
