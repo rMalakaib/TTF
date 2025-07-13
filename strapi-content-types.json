@@ -1,0 +1,52 @@
+{
+  "question": {
+    "kind": "collectionType",
+    "collectionName": "questions",
+    "info": {
+      "singularName": "question",
+      "pluralName": "questions",
+      "displayName": "Question",
+      "description": "Form questions with content and scoring criteria"
+    },
+    "options": {
+      "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+      "questionTitle": {
+        "type": "string",
+        "required": true,
+        "maxLength": 255
+      },
+      "stepInfo": {
+        "type": "string",
+        "required": true,
+        "maxLength": 255
+      },
+      "factsContent": {
+        "type": "richtext",
+        "required": true
+      },
+      "scoringCriteria": {
+        "type": "richtext",
+        "required": true
+      },
+      "maxScoreExample": {
+        "type": "richtext",
+        "required": false
+      },
+      "questionOrder": {
+        "type": "integer",
+        "required": true,
+        "unique": true,
+        "min": 1,
+        "max": 18
+      },
+      "isActive": {
+        "type": "boolean",
+        "default": true,
+        "required": true
+      }
+    }
+  }
+}

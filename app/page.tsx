@@ -1,7 +1,5 @@
-"use client"
-
-import Component from "../form-interface"
+import FormInterface from "../form-interface"
 
 export default function Page() {
-  return <Component />
+  return <FormInterface questionOrder={1} />
 }
