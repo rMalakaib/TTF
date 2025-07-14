@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "submissions",
+  "info": {
+    "singularName": "submission",
+    "pluralName": "submissions",
+    "displayName": "Submission"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questionId": {
+      "type": "integer"
+    },
+    "userAnswer": {
+      "type": "text"
+    },
+    "aiScore": {
+      "type": "integer"
+    },
+    "scoreReasoning": {
+      "type": "text"
+    },
+    "scoreImprovement": {
+      "type": "text"
+    }
+  }
+}

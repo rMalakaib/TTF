@@ -38,6 +38,9 @@
     },
     "maxScore": {
       "type": "integer"
+    },
+    "aiPrompt": {
+      "type": "text"
     }
   }
 }
