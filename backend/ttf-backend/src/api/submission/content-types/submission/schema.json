@@ -25,6 +25,12 @@
     },
     "scoreImprovement": {
       "type": "text"
+    },
+    "isRevision": {
+      "type": "boolean"
+    },
+    "previousSubmissionId": {
+      "type": "string"
     }
   }
 }

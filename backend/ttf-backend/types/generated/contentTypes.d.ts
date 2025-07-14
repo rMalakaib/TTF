@@ -462,12 +462,14 @@ export interface ApiSubmissionSubmission extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    isRevision: Schema.Attribute.Boolean;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::submission.submission'
     > &
       Schema.Attribute.Private;
+    previousSubmissionId: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     questionId: Schema.Attribute.Integer;
     scoreImprovement: Schema.Attribute.Text;
