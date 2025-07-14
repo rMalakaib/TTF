@@ -432,6 +432,7 @@ export interface ApiCollectionCollection extends Struct.CollectionTypeSchema {
       'api::collection.collection'
     > &
       Schema.Attribute.Private;
+    maxScore: Schema.Attribute.Integer;
     maxScoreExample: Schema.Attribute.Blocks;
     publishedAt: Schema.Attribute.DateTime;
     questionNumber: Schema.Attribute.Integer;

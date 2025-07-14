@@ -35,6 +35,9 @@
     },
     "questionNumber": {
       "type": "integer"
+    },
+    "maxScore": {
+      "type": "integer"
     }
   }
 }
