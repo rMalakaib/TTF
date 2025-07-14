@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectName": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true,
+      "unique": true
+    },
+    "projectUuid": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "secretKey": {
+      "type": "string",
+      "required": true
+    },
+    "ownerEmail": {
+      "type": "email",
+      "required": true
+    },
+    "emailDomain": {
+      "type": "string",
+      "required": true
+    },
+    "logoUrl": {
+      "type": "string"
+    },
+    "memberCount": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}
